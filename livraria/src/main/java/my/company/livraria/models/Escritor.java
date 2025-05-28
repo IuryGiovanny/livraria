@@ -11,7 +11,7 @@ import jakarta.validation.constraints.*;
  *
  * @author Iury
  */
-// Escritor.java
+
 @Entity
 public class Escritor {
 

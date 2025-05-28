@@ -15,7 +15,6 @@ import jakarta.validation.constraints.Size;
  *
  * @author Iury
  */
-// Livro.java
 
 @Entity
 public class Livro {

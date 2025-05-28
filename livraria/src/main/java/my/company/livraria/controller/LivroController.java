@@ -29,7 +29,7 @@ public class LivroController {
 
     @PostMapping
     public ResponseEntity<?> salvarLivro(@Valid @RequestBody Livro livro) {
-        // Buscar autor pelo id para garantir que existe
+
         Optional<Escritor> autor = escritorService.buscarPorId(livro.getAutor().getId_autor());
         if (autor.isEmpty()) {
             return ResponseEntity.badRequest().body("Autor não encontrado");
